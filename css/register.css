@@ -1,0 +1,21 @@
+/*
+* @Author: feito
+* @Date:   2019-11-14 20:42:04
+* @Last Modified by:   feito
+* @Last Modified time: 2019-11-15 13:40:24
+*/
+@import url(index.css);
+/* 参考华为注册首页 */
+#divcontent{
+	height: 600px;
+	width: 520px;
+	margin: 100px auto;
+	box-shadow: 0px 8px 16px 0 rgba(0,0,0,1);/* 盒子阴影上、右、下、左 ragb（色，透明度）*/
+	border-color: rgba(228,228,228,1);
+}
+.registertitle{
+	font-size: 24px;
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>首页</title>
+        <script src="js/jquery-3.4.1.min.js"></script><!-- jquery -->
+        <link rel="stylesheet" href="css/index.css"><!-- 初始化页面css样式 -->
+        <link rel="stylesheet" href="css/font/font_1471941_3qqi6j742jb/iconfont.css"><!-- 阿里本地矢量图 -->
+        <link rel="stylesheet" href="css/main.css"><!-- 主页css文件 -->
+        <script type="text/javascript" src="js/Login.js"></script>	<!-- 点击登录弹出登录窗口 -->
+        <script type="text/javascript" src="js/tips_time.js"></script><!-- tips时间获取 -->
+        <script type="text/javascript" src="js/tips.js"></script>
+    </head>
+
+    <body class="main">
+    	 <!-- 登录 注册 购物车 消息-->
+        <div class="top">
+            <ul>
+            	<li><a href="javascript:void(0);" onclick="show_login()">登录</a></li>
+            	<li><a href="#">注册</a></li>
+            	<li><a href="#"><span class="iconfont icongouwuche"style="font-size:16px;background-color: #f5f5f5;"></span>购物车</a></li>
+                <li><a href="#"><span class="iconfont iconliuyan"style="font-size:16px;background-color: #f5f5f5;"></span>消息(<span>0</span>)</a></li>   
+            </ul>
+        </div>
+
+		<!-- 点击登录弹出登录界面 "-->
+			<form action="" id="login" style="display:none;">
+			<!-- 关闭登录窗口 -->
+				<div id="close_view">
+					<a href="javascript:void(0);" onclick="close_login()">
+						<span class="iconfont iconguanbi"style="font-size:16px;background-color:#EDEDED;"></span>
+					</a>
+				</div>
+				<div class="table"> 	
+					<div class="user">
+						<span style="background-color:#EDEDED">账&emsp;&emsp;号:</span>
+						<input type="text"/>
+					</div>
+					<div class="password">
+						<span style="background-color:#EDEDED">密&emsp;&emsp;码:</span>
+						<input type="text"/>
+					</div>
+				</div>
+				<!-- 记住我，忘记密码 -->
+				<div class="rm_fg">
+					<a href="#">忘记密码</a>
+				</div>
+
+				<div class="log_reg">
+					<input type="submit" value="登录">
+					<input type="button" value="注册">
+				</div>
+			</form>
+			<div id="overDiv" style="display:none;"></div>
+		<!-- header content footer -->
+		<div class="containter">
+			<div class="header"></div>
+			<div class="tips">
+				<div class="tips_time">当前时间是：
+				<span class="year"></span>
+				<span class="month"></span>
+				<span class="date"></span>
+				<span class="day"></span>
+				</div>
+				<div class="tips_container">
+					<img src="images/tips.png" height="50px" width="80px" alt="">
+					<!-- 滚动字条 -->
+					<div class="wrap">
+  						<div class="cont">
+    						<p class="txt">本网站由蔡徐坤赞助，请大家多多支持坤坤啊！坤坤可是为教育事业操碎了心！相信我们得网站就像坤坤一样越来越好！</p>   
+  						</div>
+  					</div>
+				</div>
+			</div>
+
+			<div class="modules">
+				<!-- 右侧商品展示 -->
+					<div class="modules_right">
+						<div class="search">
+							<input type="text" style="width:250px;height:32px;">
+							<button style="height:32px;width:60px;">搜索</button>
+							<div class="nav">
+								<ul>
+									<li><a href="#">最新</a></li>
+									<li><a href="#">闲置</a></li>
+									<li><a href="#">服饰</a></li>
+									<li><a href="#">美妆</a></li>
+									<li><a href="#">书籍</a></li>
+									<li><a href="#">文具</a></li>
+									<li><a href="#">其他</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- 商品展示 -->
+						<div class="exhibit"></div>
+					</div>
+				<!-- 左侧窗口展示 -->
+					<div class="modules_left">
+						<!-- 系统公告 -->
+						<div class="systemNotice">
+							<div class="systemNotice_title">
+							<img src="images/gonggao-copy.png" height="16" width="16">
+							系统公告
+							</div>	
+							<p style="text-indent:2em;">欢迎来到学生二手交易平台</p>
+						</div>
+						<!-- 校园资讯 -->
+						<div class="schoolNews">
+							<div class="schoolNews_title">
+							<img src="images/news.png" height="16" width="16">
+							校内资讯
+							</div>
+							<div class="newsItem">
+								<ul>
+									<li>11月12号蔡徐坤来广交唱、跳、rap</li>
+									<li>10月5号蔡徐坤到灾区打篮球</li>
+									<li>10月3号蔡徐坤提交了律师函</li>
+									<li>蔡徐坤火遍各大鬼畜区</li>
+									<li>蔡徐坤的自我修养</li>
+									<li>10月2号蔡徐坤又鬼畜了</li>
+									<li>10月1号坤坤粉丝集体攻下b站</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 你的建议 -->
+						<div class="yourSuggetion">
+							<div class="yourSuggetion_title">
+							<img src="images/jianyi.png" height="16" width="16">
+							你的建议
+							</div>
+							<form action="" class="yourSuggetion_content">
+								<textarea 
+								name="textareaname" 
+								placeholder="请写下你的意见和建议！"
+								cols="28"
+								rows="9"
+								maxlength="100"></textarea>
+								<button>提交</button>
+							</form>
+							
+						</div>
+				</div>
+			</div>
+		</div>
+	<div class="footer">
+			<span><a href="#">关于我们</a></span>
+			<span><a href="#">联系我们</a></span>
+			<span><a href="#">管理员通道</a></span>
+	</div>
+    </body>
+</html>

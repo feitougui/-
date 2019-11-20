@@ -1,0 +1,23 @@
+/*
+* @Author: feito
+* @Date:   2019-11-10 15:23:07
+* @Last Modified by:   feito
+* @Last Modified time: 2019-11-14 11:53:01
+*/
+*{
+	margin:0px;
+	padding:0px;
+	font-size: 12px;
+	box-sizing: border-box;
+}
+ul, ol{ 
+	list-style:none; 
+} 
+
+a { 
+	color: #6c6c6c;
+	text-decoration:none; 
+}
+a:hover { 
+	color: #7A9F90;
+} 

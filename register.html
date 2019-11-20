@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/register.css">
+        <script type="text/javascript" src="js/form.js"></script>
+        <style>
+            table td{
+                height:40px;
+            }
+        </style>
+    </head>
+    <body>
+    	<!-- 注册页面 -->
+    	<div id="divcontent" align="center">
+    		<!-- 标题 -->
+    			<div class="registertitle">欢迎注册</div>
+
+    		<!-- 提交页面 -->
+    		<form action="registersucceess.html" method="post" onsubmit="return checkForm();">
+    			<table width="520px" border="0" cellspacing="15px">
+                    <!-- 邮箱验证- -->
+    				<tr>
+    					<td style="text-align:right;width:20%">邮箱：</td>
+    					<td style="width:40%">
+    						<input type="text" class="textinput" id="email" name="email" onkeyup="checkEmail();"/>
+    					</td>
+    						<td colspan="2"><span id="emailMsg"></span>
+    						<font color="#999999">请输入有效的邮箱地址</font>
+    					</td>
+    				</tr>
+                    <!-- 昵称部分 -->
+    				<tr>
+    					<td style="text-align:right">昵称：</td>
+    					<td>
+    						<input type="text" class="textinput" id="username" name="username" onkeyup="checkUsername();"/>
+    					</td>
+    					<td colspan="2">
+    						<span id="usernameMsg"></span>
+    						<font color="#999999">字母数字下划线1到10位，不能是数字开头</font>
+    					</td>
+    				</tr>
+
+    				<tr>
+    					<td style="text-align:right">密码：</td>
+    					<td>
+    						<input type="password" class="textinput" id="password" name="password" onkeyup="checkPassword();">
+    					</td>
+    					<td>
+    						<span id="passwordMsg"></span>
+    						<font color="#999999">密码请设置6-16位字符</font>
+    					</td>
+    				</tr>
+
+    				<tr>
+    					<td style="text-align:right">重复密码：</td>
+    					<td>
+    						<input type="password" class="textinput" id="repassword" name="repassword" onkeyup="checkConfirm();">
+    					</td>
+    					<td>
+    						<span id="confirmMsg"></span>&nbsp;
+    					</td>
+    				</tr>
+
+    				<tr>
+    					<td style="text-align:right">性别：</td>
+    					<td colspan="2">&nbsp;&nbsp;
+							<input type="radio" name="gender" value="男" checked="checked">男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="gender" value="女"/>女
+    					</td>
+    					<td>&nbsp;</td>
+    				</tr>
+
+    				<tr>
+    					<td style="text-align:right">联系电话：</td>
+                        <td>
+                            <input type="text" class="textinput" id="telephone" name="telephone" onkeyup="checkTelephone();"/>
+                        </td>
+    					<td>
+                            <span id="telephoneMsg"></span>
+    					</td>
+    				</tr>
+
+    				<tr>
+    					<td style="text-align:right">个性签名：</td>
+    					<td colspan="2">
+    						<textarea name="introduce" class="textarea"></textarea>
+    					</td>
+    				</tr>
+
+    			</table>
+
+
+    			<div>
+                    <input type="submit" style="width:60px;height:40px;font-size:24px;margin-top:30px;" name="submit" border="0"/>
+                </div>
+    		</form>
+    	</div>
+    </body>
+</html>
